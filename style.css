@@ -76,11 +76,59 @@ nav {
         font-size: 1rem; /* Smaller font size on mobile */
     }
     
-    /* You might want to hide the text on very small screens */
-    @media (max-width: 480px) {
-        .logo-text {
-            display: none;
-        }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        position: relative;
+        order: 1;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .hero-image {
+        order: 2;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -155,7 +203,7 @@ h2 {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    margin-bottom: 22rem;
+    margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     color: white;
 }
@@ -244,18 +292,4 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
 }

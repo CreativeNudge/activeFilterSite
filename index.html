@@ -39,6 +39,11 @@
                 }, 0);
             }
         });
+
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
     </script>
 </head>
 <body>
@@ -54,23 +59,24 @@
                 <li><a href="https://karinavt.com" target="_blank">Creator</a></li>
                 <li><a href="https://github.com/CreativeNudge/activefocus-youtube-filter" target="_blank" class="cta-button">Download</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
 
     <main>
         <section id="hero">
             <div class="hero-container">
-                <img src="heroImage.png" alt="ActiveFocus YouTube Experience" class="hero-image">
                 <div class="hero-text">
                     <h1>Transform Your YouTube Experience with ActiveFocus</h1>
                     <p>Unlock the full potential of YouTube as a learning platform. Filter out distractions and focus on what truly matters to you.</p>
                     <a href="https://github.com/CreativeNudge/activefocus-youtube-filter" target="_blank" class="cta-button">Get ActiveFocus Now</a>
                 </div>
+                <img src="heroImage.png" alt="ActiveFocus YouTube Experience" class="hero-image">
             </div>
-            <!-- <img src="heroImage.png" alt="Transform Your YouTube Experience with ActiveFocus" class="hero-image">
-            <h1>Transform Your YouTube Experience with ActiveFocus</h1>
-            <p>Unlock the full potential of YouTube as a learning platform. Filter out distractions and focus on what truly matters to you.</p>
-            <a href="https://github.com/CreativeNudge/activefocus-youtube-filter" target="_blank" class="cta-button">Get ActiveFocus Now</a> -->
         </section>
 
         <section id="features">
