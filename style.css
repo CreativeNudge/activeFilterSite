@@ -73,7 +73,7 @@ nav {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .logo-text {
-        font-size: 1rem; /* Smaller font size on mobile */
+        font-size: 0.8rem; /* Smaller font size on mobile */
     }
     
     nav ul {
@@ -109,6 +109,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .hero-text {
@@ -116,19 +117,29 @@ nav {
         order: 1;
         text-align: center;
         margin-top: 1rem;
+        z-index: 10;
     }
 
     .hero-image {
         order: 2;
         width: 100%;
+        margin-top: -50px; /* Adjust as needed to align text above image */
     }
-    
+
     h1 {
         font-size: 2rem;
     }
     
     h2 {
         font-size: 1.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem; /* Adjust for mobile view */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adjust for mobile view */
     }
 }
 
@@ -203,7 +214,7 @@ h2 {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     color: white;
 }
